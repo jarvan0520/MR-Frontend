@@ -1,38 +1,114 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.header-container {
+  background-color: #f6f6f7;
+  margin: 20px 10% 0 10%; 
+}
+
+.material-symbols-outlined, .cartAmount{
   text-align: center;
+  vertical-align: middle;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  padding: 20px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.size-options-container{
+  display: inline-block;
+  padding: 5px 10px 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-title,.product-price, .product-text, .product-label{
+  font-weight: bold;
+  padding:  10px 5px;
+  margin-bottom: 5px;
+}
+.product-size, .product-add{
+  padding:  0px 5px ;
+}
+
+.product-price{
+  border-top: 1px solid ;
+  border-bottom: 1px solid ;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.product-image{
+  width: 100%;
+}
+
+.main-part{
+  padding: 40px 20% 20%;
+  z-index: 0;
+  position: absolute;
+}
+
+.mini-cart{
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  margin: 0 10%;
+  z-index: 1;
+  padding: 0;
+}
+
+button#add-to-cart {
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #222222;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+button#add-to-cart:hover {
+  background-color: #444444;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#error-message {
+  color: #c90000;
+  font-size: 16px;
+  margin: 5px 0;
+  padding-top: 5px;
+}
+
+.intro-part{
+  text-align: left;
+}
+
+.cart-item{
+  display: inline-block;
+}
+.cartItemDetail{
+  display: block;
+  text-align: left;
+  padding: 5px 10px;
+}
+.cart-section{
+  padding-bottom: 10px;
+}
+.cartButton{
+  text-align: right;
+}
+
+.mini-cart-items {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  width: 100%;
 }
